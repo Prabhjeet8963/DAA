@@ -1,0 +1,12 @@
+//Questions to practice for interviews and Class Quiz 
+
+What is an algorithm? How is it different from a program?
+What are the key characteristics of a good algorithm?
+What is rate of growth?
+Write an algorithm to reverse a string. Explain how it satisfies algorithm characteristics.
+Can two different algorithms solve the same problem? How do you choose which one is better?
+What is the difference between algorithm design and algorithm analysis?
+How do algorithms apply in AI, networking, and databases? Give one example each.
+What is the role of algorithms in real-time systems?
+Analyze the time complexity of binary search?
+Differenciate between Program, Datastructure , Algorithm.
