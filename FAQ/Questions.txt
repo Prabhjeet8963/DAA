@@ -1,12 +1,100 @@
 //Questions to practice for interviews and Class Quiz 
 
-What is an algorithm? How is it different from a program?
-What are the key characteristics of a good algorithm?
-What is rate of growth?
-Write an algorithm to reverse a string. Explain how it satisfies algorithm characteristics.
-Can two different algorithms solve the same problem? How do you choose which one is better?
-What is the difference between algorithm design and algorithm analysis?
-How do algorithms apply in AI, networking, and databases? Give one example each.
-What is the role of algorithms in real-time systems?
-Analyze the time complexity of binary search?
-Differenciate between Program, Datastructure , Algorithm.
+1. What is an algorithm? How is it different from a program?
+
+Algorithm: A step-by-step, finite sequence of well-defined instructions to solve a problem. It is abstract and independent of language, compiler, or hardware.
+Program: A concrete implementation of an algorithm in a programming language. A program must consider syntax, data types, memory, and input/output handling.
+Key difference: Algorithm defines what to do, while a program defines how to do it.
+
+-------------------------------------------------------------------
+
+2. What are the key characteristics of a good algorithm?
+
+Finiteness – Must terminate after a finite number of steps.
+Definiteness – Each step should be precise and unambiguous.
+Input – Should accept zero or more inputs.
+Output – Must produce at least one correct output.
+Effectiveness – Each step should be simple and feasible.
+Generality – Should work for a wide range of valid inputs.
+Efficiency – Should minimize both time and space usage.
+
+-------------------------------------------------------------------
+
+3. What is rate of growth?
+
+Rate of growth describes how the performance (time or space consumption) of an algorithm increases as the input size grows. It is expressed using asymptotic notations like Big-O, Big-Ω, and Big-Θ.
+Example: Linear search has O(n), binary search has O(log n), and naive matrix multiplication has O(n³).
+
+-------------------------------------------------------------------
+
+4. Write an algorithm to reverse a string. Explain how it satisfies algorithm characteristics.
+Algorithm (reverse string of length n):
+Input string S.
+Initialize two pointers: i = 0, j = n-1.
+While i < j:
+Swap S[i] and S[j].
+Increment i, decrement j.
+Output the reversed string S.
+Characteristics satisfied:
+Finiteness – terminates after about n/2 swaps.
+Definiteness – each step is unambiguous.
+Input/Output – takes a string and produces a reversed string.
+Effectiveness – each step (swap, increment, decrement) is basic.
+Generality – works for any valid string.
+Complexity: Time O(n), Space O(1).
+
+-------------------------------------------------------------------
+
+5. Can two different algorithms solve the same problem? How do you choose which one is better?
+Yes. Many problems can be solved using multiple algorithms (e.g., sorting with bubble sort, merge sort, or quicksort).
+Choosing criteria:
+Time complexity.
+Space complexity.
+Scalability as input grows.
+Ease of implementation and debugging.
+Domain-specific constraints (e.g., real-time systems require predictability).
+
+-------------------------------------------------------------------
+
+6. What is the difference between algorithm design and algorithm analysis?
+Algorithm Design: The process of creating step-by-step methods to solve problems. Focuses on strategies such as divide and conquer, greedy methods, dynamic programming, etc.
+Algorithm Analysis: The process of evaluating the performance of an algorithm in terms of time complexity, space complexity, and correctness.
+In short: design is building the method, analysis is evaluating its performance.
+
+-------------------------------------------------------------------
+
+7. How do algorithms apply in AI, networking, and databases? Give one example each.
+AI: Algorithms guide decision-making and learning. Example: A* search algorithm for pathfinding.
+Networking: Algorithms manage routing and data transfer. Example: Dijkstra’s algorithm in OSPF routing.
+Databases: Algorithms optimize searching and query handling. Example: B-tree algorithms for indexing.
+
+-------------------------------------------------------------------
+
+8. What is the role of algorithms in real-time systems?
+Real-time systems require algorithms with predictable and bounded response times.
+Key roles:
+Determinism: Guarantee completion within strict deadlines.
+Low complexity: Prefer O(1) or O(log n).
+Scheduling algorithms: Examples are Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF).
+Resource management: Avoid deadlocks (e.g., Banker’s algorithm).
+Example: The airbag deployment system in a car must execute in milliseconds.
+
+-------------------------------------------------------------------
+
+9. Analyze the time complexity of binary search.
+
+Binary search repeatedly halves the search interval.
+Best case: O(1), if the element is found at the middle.
+Worst case: O(log n), as the input size is halved each step.
+Space complexity: Iterative version O(1), recursive version O(log n) due to stack.
+Requirement: Input must be sorted.
+
+-------------------------------------------------------------------
+
+10. Differentiate between Program, Data Structure, Algorithm.
+
+Concept	Definition	Example
+Program	A set of coded instructions executed by a computer.	A C++ program to compute GCD.
+Data Structure	A method of organizing and storing data efficiently.	Arrays, Linked Lists, Hash Maps.
+Algorithm	A finite, step-by-step procedure to solve a problem.	Euclidean algorithm for GCD.
+Relationship: Algorithms operate on data stored in data structures, and programs implement algorithms using data structures.
