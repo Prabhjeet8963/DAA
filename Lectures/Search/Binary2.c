@@ -1,4 +1,3 @@
-//Works only on Sorted array
 #include <stdio.h>
 
 int main() {
@@ -7,7 +6,7 @@ int main() {
     scanf("%d", &n);
 
     int arr[n];
-    printf("Enter %d sorted elements(small to big):\n", n);
+    printf("Enter %d sorted elements(small to big):\n", n);//Works only on Sorted array
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
