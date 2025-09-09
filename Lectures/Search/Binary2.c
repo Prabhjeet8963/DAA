@@ -1,3 +1,4 @@
+//Works only on Sorted array
 #include <stdio.h>
 
 int main() {
